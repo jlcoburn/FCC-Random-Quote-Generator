@@ -1,0 +1,21 @@
+body {
+  background: #000;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+}
+
+.chalkBoard {
+  position: absolute;
+  background: #3b653d;
+  max-width: 600px;
+  margin: auto;
+  height: 400px;
+  top: 20%;
+  left: 20%;
+  text-align: center;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: sienna;
+  border-radius: 10px;
+}

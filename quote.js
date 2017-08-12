@@ -1,4 +1,3 @@
-
 var quoteText='';
 var quoteAuthor='';
 function getQuote() {
@@ -14,12 +13,16 @@ function getQuote() {
   }).done((response) => {
     quoteText=response.quoteText;
     quoteAuthor=response.quoteAuthor;
+      if (quoteAuthor==='') {
+    quoteAuthor = 'Unknown';
+  }
     $('#quote').html(quoteText + '<br>'+ '--' + quoteAuthor);
   });
 
 }
 
 function tweet() {
+
   var tweetLength=quoteText.length+quoteAuthor.length;
   console.log(tweetLength);
   if (tweetLength > 140) {

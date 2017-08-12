@@ -8,7 +8,7 @@ body {
 .chalkBoard {
   position: absolute;
   background: #3b653d;
-  max-width: 600px;
+  width: 600px;
   margin: auto;
   height: 400px;
   top: 20%;
@@ -19,3 +19,20 @@ body {
   border-color: sienna;
   border-radius: 10px;
 }
+
+.getNewBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.tweetBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 130px;
+}
+
+//TODO
+
+Add media queries for mobile.
+Increase font size on smaller screens
